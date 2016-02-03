@@ -11,6 +11,8 @@ class Ennemi(object):
         self.vitesse = vitesse # en pixels seconde
         self.position = position
         self.angle = angle
+        self.sprite = "assets/sprites/chasseur1.png"
+        self.rect = None
 
     def deplacer(self):
         self.position = (self.position[0]-(self.vitesse*sin(radians(self.angle))),
@@ -27,4 +29,3 @@ def test():
 
 if __name__ == '__main__':
     test()
-

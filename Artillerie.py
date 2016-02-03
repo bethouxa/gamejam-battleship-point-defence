@@ -5,10 +5,10 @@ from Projectile import Projectile
 
 class Artillerie(Tourelle):
     def __init__(self,position):
-        super().__init__(position)
+        super(Artillerie,self).__init__(position)
         self.type_projectile = 'obus'
         self.vitesse_rotation = 75
-        self.sprite = ""
+        self.sprite = "assets/sprites/artillerie.png"
 
     def tir(self):
         return Projectile(self.position,self.angle)

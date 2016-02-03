@@ -7,8 +7,8 @@ import Constantes
 class Battleship(object):
     def __init__(self):
         self.hp = 100
-        self.artillerie = Artillerie() # boom boom
-        self.aa = AA() # pewpewpew
-        self.tourelle_active = artillerie
+        self.artillerie = Artillerie((100,100)) # boom boom
+        #self.aa = AA() # pewpewpew
+        self.tourelle_active = self.artillerie
 
-        self.sprite = ""
+        self.sprite = "assets/sprites/bs.png"
